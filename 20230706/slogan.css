@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "TTWanjudaedunsancheB";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.slogan-background {
+    background-color: #f0f2f5;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    padding: 1em;
+}
+
+h1 {
+    color: #0c4da2;
+    font-family: "TTWanjudaedunsancheB";
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    color: #0c0d0d;
+    font-family: "TTWanjudaedunsancheB";
+    font-size: 1.5rem;
+    text-align: center;
+}
