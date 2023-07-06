@@ -1,0 +1,22 @@
+/* 가상 클래스 선택자 */
+a:link {
+  color: skyblue;
+}
+
+a:visited {
+  color: blue;
+}
+
+/* 구조적 가상 선택자 */
+li:nth-child(even) {
+  color: salmon;
+}
+
+/* 가상 요소 */
+p::before {
+  content: "7기 여러분 ";
+}
+
+p::after {
+  content: "😊";
+}
