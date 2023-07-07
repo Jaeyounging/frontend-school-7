@@ -1,0 +1,15 @@
+p {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+.specific {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
