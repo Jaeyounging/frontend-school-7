@@ -1,0 +1,22 @@
+body {
+  height: 200vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rosybrown;
+}
+
+/* relative - 자기 요소에서 상대적인 위치를 가짐, 원래 위치 유지 */
+.relative {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+/* absolute - 조상의 위치를 기준으로 자리를 잡는다, 원래 위치 삭제 */
+
+.fixed {
+  position: fixed;
+}

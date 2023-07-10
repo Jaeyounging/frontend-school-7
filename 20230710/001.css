@@ -1,0 +1,8 @@
+.ratio img {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.padding div {
+}

@@ -1,0 +1,30 @@
+/* - position이 static 외의 값을 가진 박스에 대하여 z축의 위치를 지정함, 값이 클수록 제일 위로 배치 됨 */
+
+.box1,
+.box2,
+.box3 {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background-color: slateblue;
+  position: absolute;
+  z-index: 300;
+}
+
+.box2 {
+  background-color: royalblue;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 200;
+}
+
+.box3 {
+  background-color: aliceblue;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 100;
+}
