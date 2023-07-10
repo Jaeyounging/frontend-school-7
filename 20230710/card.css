@@ -1,4 +1,5 @@
-@font-face {
+/* 강의 전 코드 */
+/* @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
     format("woff");
@@ -89,7 +90,7 @@ img {
   text-align: left;
   color: #29363d;
   text-decoration: underline;
-}
+} */
 
 /* 강사님 코드 */
 /* body,
@@ -159,7 +160,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-height: 1.6;
-  height: calc(14px * 1.6 * 2);
+  height: calc(1em * 1.6 * 2);
 }
 
 .card-ui .read {
@@ -167,3 +168,71 @@ body {
   font-family: 'Pretendard-Bold';
   font-size: 14px;
 } */
+
+/* 강의 후 코드 */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  width: 288px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 0px #0000001a;
+  margin: auto;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.text-group {
+  padding: 24px 16px 16px; /* 위, 오른쪽 and 아래, 왼쪽 */
+}
+
+.container img {
+  width: 100%;
+  aspect-ratio: 288/196;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.title {
+  font-family: "Pretendard-Bold";
+  color: #29363d;
+  font-size: 16px;
+  /* 한 줄 말줄임 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content {
+  color: #5a6a72;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 16px 0;
+  height: calc(1em * 1.6 * 2);
+  /* 여러 줄 말줄임 */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.read {
+  font-family: "Pretendard-Bold";
+  color: #29363d;
+  font-size: 14px;
+  text-decoration: underline;
+}
