@@ -42,18 +42,23 @@
   );
   background-clip: padding-box;
   border: 4px dashed #e6d6ff;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 
 .box3 {
   border: 2px solid #e8e8e8;
-  border-radius: 0 90px 90px 90px;
+  border-radius: 0 50px 50px 50px;
   box-shadow: 10px 10px 10px #e8e8e8;
 }
 
 .content {
+  color: #ffffff;
   font-family: "KBO-Dia-Gothic_bold";
   font-size: 1.2rem;
   text-align: center;
   margin-top: 20px;
+}
+
+.box3 .content {
+  color: #29363d;
 }
