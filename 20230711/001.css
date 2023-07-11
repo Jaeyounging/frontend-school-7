@@ -1,0 +1,26 @@
+span {
+  background-color: skyblue;
+  float: left;
+  margin-left: 20px;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.layout img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.layout h2 {
+  padding-top: 24px;
+}
+
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
