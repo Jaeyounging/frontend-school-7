@@ -1,0 +1,27 @@
+table {
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+caption {
+  caption-side: bottom;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+th,
+td {
+  border: 1px solid #000;
+}
+
+th {
+  width: 120px;
+  background-color: #efefef;
+}
+
+td {
+  text-align: center;
+}
+
+.grade ~ td {
+  font-weight: 600;
+}
