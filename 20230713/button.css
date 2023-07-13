@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+button {
+  width: 88px;
+  height: 32px;
+  background-color: #343f50;
+  border: 1px solid #1a202c;
+  box-shadow: inset 1px 1px #4a5568;
+  color: #cbd5df;
+  font-family: "Pretendard-Bold";
+  font-size: 12px;
+}
+
+button:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+button:active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.button1:active {
+  box-shadow: inset 1px 1px #262f3e;
+}
+
+.yes-btn {
+  color: #439aff;
+}
+
+.yes-btn:hover {
+  background-color: #439aff;
+  border: 1px solid #439aff;
+  box-shadow: inset 1px 1px #73b4ff;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.yes-btn:active {
+  box-shadow: inset 1px 1px #3b78be;
+}
+
+.del-btn {
+  color: #eb5757;
+}
+
+.del-btn:hover {
+  background-color: #eb5757;
+  border: 1px solid #eb5757;
+  box-shadow: inset 1px 1px #fd6f6f;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.del-btn:active {
+  box-shadow: inset 1px 1px #d94242;
+}
