@@ -1,0 +1,45 @@
+h1,
+p {
+  margin: 0;
+  font: inherit;
+}
+
+body {
+  background: url(./img/bg.png) no-repeat;
+}
+
+.fox-img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  width: 300px;
+  height: 306px;
+  margin: 0 auto;
+  background-color: #9c6035;
+  border-radius: 0 0 30px 30px;
+  border-bottom: 10px solid #46260e;
+}
+
+h1 {
+  color: #fff;
+  font-family: Arial;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 10px 0 0 20px;
+}
+
+p {
+  color: #e8bc9c;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px 0 0 20px;
+}
