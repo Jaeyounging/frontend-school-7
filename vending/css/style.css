@@ -1,0 +1,298 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@500&family=Yeon+Sung&display=swap");
+
+/* reset */
+body,
+h1,
+h2,
+p,
+ul,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+strong {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: 0;
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
+/* css */
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+body {
+  background-color: #eae8fe;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 .cola-logo {
+  max-width: 50%;
+}
+
+/* 기본 버튼 */
+[class*="btn"] {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 32px;
+  font-size: 13px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* main */
+.section-wrap {
+  width: 748px;
+  max-width: 100%;
+  display: grid;
+}
+
+/* section1 */
+.section1 {
+  grid-area: section1;
+  background-color: #fff;
+  padding: 30px 27px;
+}
+
+/* section1 - 판매 음료 */
+.cola-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.cola-btn {
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+
+.cola-btn.active {
+  border: 3px solid #6327fe;
+}
+
+.cola-btn:disabled {
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.cola-btn:disabled::after {
+  content: "";
+  /* display: block; */ /* 가상요소는 인라인이므로 width, heigt, margin 등을 설정할 수 없어서 줌 */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.soldout {
+  color: #eae8fe;
+  font-size: 14px;
+  z-index: 10;
+  border: 4px double #eae8fe;
+  position: absolute;
+  width: 45px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.cola-list img,
+.cola-list strong,
+.cola-list span {
+  display: block;
+}
+
+.cola-list img {
+  width: 36px;
+  height: 65px;
+  margin: auto;
+}
+
+.cola-list .cola-name {
+  color: #333;
+  font-size: 9px;
+  margin: 6px auto;
+}
+
+.cola-list .cola-price {
+  color: #fff;
+  font-size: 12px;
+  background-color: #6327fe;
+  padding: 5px 0;
+  font-weight: normal;
+  border-radius: 30px;
+}
+
+/* section1 - 장바구니 */
+.container {
+  display: grid;
+  grid-template-columns: auto calc((100% - (12px * 2)) / 3);
+  grid-template-rows: 33px 33px 106px;
+  gap: 11px 12px;
+  margin-top: 11px;
+}
+
+.bg-box {
+  background-color: #eae8fe;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+#input-money {
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  color: #bdbdbd;
+  font-size: 13px;
+  padding: 6px;
+}
+
+.get-list {
+  background-color: #eae8fe;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  padding: 12px;
+  overflow: auto;
+}
+
+.get-list li {
+  height: 46px;
+  padding: 0 8px 0 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #333;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.get-list li ~ li {
+  margin-top: 6px;
+}
+
+.get-list img {
+  width: 18px;
+}
+
+.get-list strong {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.get-btn {
+  background-color: #6327fe;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+/* section2 */
+.section2 {
+  background-color: #fff;
+  grid-area: section2;
+  padding: 9px 27px;
+}
+
+.section2 p {
+  font-weight: 700;
+}
+
+/* section3 */
+.section3 {
+  background-color: #fff;
+  grid-area: section3;
+  padding: 25px 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section3 h2 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section3 .get-list {
+  margin-top: 13px;
+  flex-grow: 1;
+  flex-basis: 364px; /* 초기 크기 지정 */
+  flex-shrink: 0;
+}
+
+.total-price {
+  margin-top: 6px;
+  text-align: right;
+  font-size: 12px;
+}
+
+/* media query */
+@media (min-width: 749px) {
+  .section-wrap {
+    grid-template-areas:
+      "section1 section2"
+      "section1 section3";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px auto;
+    gap: 20px 28px;
+    margin: 43px auto;
+  }
+}
+
+@media (max-width: 748px) {
+  body {
+    background-color: #fff;
+  }
+
+  .section-wrap {
+    grid-template-areas:
+      "section1"
+      "section2"
+      "section3";
+    margin: 18px auto;
+  }
+}
