@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 | 회원가입</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <article>
+      <h2 class="login-join">로그인 또는 회원가입</h2>
+      <div class="line"></div>
+      <span class="head-content"
+        >위니브에서 여러분의 궁금증을 해결하세요! :)</span
+      >
+      <form>
+        <label for="user-id" class="a11y-hidden">아이디</label>
+        <input id="user-id" class="active" type="text" placeholder="아이디" />
+        <p class="id-request">아이디를 입력해 주세요.</p>
+        <label for="user-pw" class="a11y-hidden">비밀번호</label>
+        <input id="user-pw" type="password" placeholder="비밀번호" />
+        <p class="account-error">아이디 혹은 비밀번호과 일치하지 않습니다.</p>
+        <input id="maintain-login" type="checkbox" />
+        <label for="maintain-login">로그인 상태 유지</label>
+        <button class="login-btn">로그인</button>
+      </form>
+      <div class="join-find-wrap">
+        <a class="join" href="#">회원가입</a>
+        <span class="center-line">|</span>
+        <a class="find-id-pw" href="#">아이디/비밀번호 찾기</a>
+      </div>
+      <p class="or">또는</p>
+      <ul class="social-login-wrap">
+        <li>
+          <button class="google-btn social-login">구글 계정으로 로그인</button>
+        </li>
+        <li>
+          <button class="facebook-btn">페이스북 계정으로 로그인</button>
+        </li>
+        <li>
+          <button class="naver-btn">네이버 계정으로 로그인</button>
+        </li>
+        <li>
+          <button class="kakao-btn">카카오톡 계정으로 로그인</button>
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>
