@@ -8,11 +8,19 @@
 }
 
 /* reset */
+body {
+  margin: 0;
+}
+
 ul,
 li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+ul {
+  margin: 0;
 }
 
 h2,
@@ -72,11 +80,24 @@ article {
   background: #fff;
   border-radius: 10px;
   border: 1px solid #c4c4c4;
-  padding: 20px 24px 25px;
+  /* padding: 20px 24px 25px; */
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px 20px 0 188px;
 }
 
 .login-join {
-  text-align: center;
+  display: inline-block;
+}
+
+.close-btn {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-top: 4px;
+  background: url("../img/close.svg");
 }
 
 .line {
@@ -84,6 +105,10 @@ article {
   height: 1px;
   margin-top: 20px;
   background-color: #c4c4c4;
+}
+
+main {
+  padding: 26px 24px 24px;
 }
 
 .head-content {
@@ -194,12 +219,12 @@ article {
 }
 
 .social-login-wrap {
-  margin: 20px;
+  margin-top: 20px;
   color: #767676;
 }
 
 /* button */
-[class*="btn"] {
+[class*="login-btn"] {
   display: block;
   width: 100%;
   border-radius: 5px;
