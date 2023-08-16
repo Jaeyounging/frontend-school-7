@@ -152,6 +152,57 @@
       // }
 
       // console.log(lottoGenerator());
+
+      // ***** 2023-08-16 *****
+      // this는 함수가 호출될 때 결정이 된다.
+      // 화살표 함수에서의 this는 함수가 속해있는 곳의 상위 this를 계승 받는다.
+      // 화살표 함수에서는 bind를 사용할 수 없다.
+
+      // const car = {
+      //   name: "Benz",
+      //   getName: function () {
+      //     console.log(this);
+      //   },
+      // };
+
+      // car.getName(); // A.b
+
+      // const globalCar = car.getName;
+
+      // globalCar(); // b
+
+      // const car2 = {
+      //   name: "Volvo",
+      //   getName: car.getName,
+      // };
+
+      // car2.getName();
+
+      // const testCar = {
+      //   name: "Audi",
+      //   getName: function () {
+      //     const innerFunc = () => {
+      //       console.log("innerFunc: ", this); // Audi 객체
+      //     };
+
+      //     console.log("getName: ", this); // Audi 객체
+      //     innerFunc();
+      //   },
+      // };
+
+      // testCar.getName();
+
+      // const ageTest = {
+      //   unit: "살",
+      //   ageList: [10, 20, 30],
+      //   getAgeList: function () {
+      //     const result = this.ageList.map((item) => item + this.unit);
+
+      //     console.log(result);
+      //   },
+      // };
+
+      // ageTest.getAgeList();
     </script>
   </body>
 </html>
