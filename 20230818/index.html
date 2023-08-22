@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .box.red {
+        background-color: red;
+      }
+
+      .box.green {
+        background-color: green;
+      }
+
+      .box.blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <ul>
+      <li>
+        <button class="red">Red</button>
+      </li>
+      <li>
+        <button class="green">Green</button>
+      </li>
+      <li>
+        <button class="blue">Blue</button>
+      </li>
+    </ul>
+
+    <!-- javascript -->
+    <script>
+      const box = document.querySelector(".box");
+      const btns = document.querySelectorAll("button");
+
+      btns.forEach((item) => {
+        item.addEventListener("click", function () {
+          box.className = "box"; // 박스의 클래스 이름을 "box"로 변경
+          box.classList.add(item.className);
+        });
+      });
+    </script>
+  </body>
+</html>
