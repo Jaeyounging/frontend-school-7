@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객체지향 프로그래밍 실습🖐</title>
+  </head>
+  <body>
+    <script>
+      const jaeyoung = {
+        name: "이재영",
+        address: "서울특별시",
+        canEat: function (person) {
+          console.log("살 찌는 중,,,");
+          restraunt.serveFood();
+        },
+      };
+
+      const restraunt = {
+        money: 0,
+        serveFood: function () {
+          this.money += 10000;
+        },
+      };
+
+      jaeyoung.canEat(restraunt);
+      console.log(restraunt.money);
+    </script>
+  </body>
+</html>

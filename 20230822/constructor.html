@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>생성자 실습</title>
+  </head>
+  <body>
+    <script>
+      function RobotFactory(foods) {
+        let randomIndex = parseInt(Math.random() * foods.length); // 0 이상 3 미만
+        this.menu = foods[randomIndex];
+        // this.sayMenu = function () {
+        //   console.log(`오늘의 메뉴는 "${this.menu}" 입니다!`);
+        // };
+      }
+      // 메모리 낭비를 막기 위해 프로토타입 사용
+      RobotFactory.prototype.sayMenu = function () {
+        console.log(`오늘의 메뉴는 "${this.menu}" 입니다!`);
+      };
+
+      let robot1 = new RobotFactory(["삼겹살", "마라탕", "초밥"]);
+      let robot2 = new RobotFactory(["사시미", "야끼니꾸", "라면"]);
+
+      robot1.sayMenu();
+      robot2.sayMenu();
+    </script>
+  </body>
+</html>
