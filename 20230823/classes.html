@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class 실습💻</title>
+  </head>
+  <body>
+    <script>
+      // class Person {
+      //   constructor(name, age, address) {
+      //     this.name = name;
+      //     this.age = age;
+      //     this.address = address;
+      //   }
+
+      //   canEat() {
+      //     console.log(`${this.name}이가 밥을 먹는다!`);
+      //   }
+      // }
+
+      // const jaeyoung = new Person("이재영", 24, "서울특별시");
+      // jaeyoung.canEat();
+
+      // class Person {
+      //   constructor(name, age, fat) {
+      //     this.name = name;
+      //     this.age = age;
+      //     this.fat = fat;
+      //   }
+
+      //   eating(food) {
+      //     food.fatup(this.fat);
+      //     console.log(
+      //       `${this.name}의 돼지력이 ${food.foodName}에 의해서 ${food.cal}이 되었습니다.`
+      //     );
+      //   }
+      // }
+
+      // class Chicken {
+      //   constructor(foodName) {
+      //     this.foodName = foodName;
+      //     // this.fat = 2;
+      //   }
+
+      //   fatup(cal) {
+      //     this.cal = cal + 1;
+      //   }
+      // }
+
+      // const 한혜지 = new Person("한혜지", 28, 1);
+      // const 이재영 = new Person("이재영", 26, 1);
+      // const 치킨 = new Chicken("치킨");
+      // const 피자 = new Chicken("피자");
+
+      // 한혜지.eating(치킨);
+      // 한혜지.eating(피자);
+
+      // 기존의 돼지력에 Chicken을 먹으면 치킨의 fat이 돼지력에 추가
+      class Person {
+        constructor(name, age, fat) {
+          this.이름 = name;
+          this.나이 = age;
+          this.돼지력 = fat;
+        }
+
+        // 음식을 먹이고 돼지력을 상승시키는 메소드
+        eating(food) {
+          this.돼지력 += food.fat;
+          console.log(
+            `${this.이름}의 돼지력이 ${food.name}에 의해서 ${this.돼지력}이 되었습니다.`
+          );
+        }
+      }
+
+      class Food {
+        constructor(name, fat) {
+          this.name = name;
+          this.fat = fat;
+        }
+      }
+
+      const me = new Person("한혜지", 28, 1);
+      const chicken = new Food("치킨", 2);
+      const pizza = new Food("피자", 5);
+
+      me.eating(chicken);
+      me.eating(chicken);
+      me.eating(pizza);
+    </script>
+  </body>
+</html>
