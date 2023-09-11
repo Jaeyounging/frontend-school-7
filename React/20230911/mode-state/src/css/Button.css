@@ -1,0 +1,11 @@
+.mood-btn {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.mood-btn:hover {
+  background-color: yellowgreen;
+}
