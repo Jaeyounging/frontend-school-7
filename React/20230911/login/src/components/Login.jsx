@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import "../css/Login.css";
 
 export default function Login({ userInfo, setLogin }) {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
 
-  const handleLoginInput = (event) => {
+  const handleEmailInput = (event) => {
     setId(event.target.value);
     console.log(event.target.value);
   };
@@ -32,14 +33,20 @@ export default function Login({ userInfo, setLogin }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        아이디 : <input type="text" onChange={handleLoginInput} />
-      </label>
-      <label>
-        비밀번호 : <input type="password" onChange={handlePwInput} />
-      </label>
-      <button type="submit">로그인</button>
-    </form>
+    <article className="login-container">
+      <div className="login-header">
+        <h2>WELCOME!</h2>
+      </div>
+      <h1 className="a11y-hidden">Login</h1>
+      <form className="login-form" onSubmit={handleSubmit}>
+        <label for="user-id">Email</label>
+        <input id="user-id" type="email" onChange={handleEmailInput} />
+        <label for="user-pw">Password</label>
+        <input id="user-pw" type="password" onChange={handlePwInput} />
+        <button className="login-btn" type="submit">
+          LOGIN
+        </button>
+      </form>
+    </article>
   );
 }
